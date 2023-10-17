@@ -72,6 +72,4 @@ class bird:
 
     def collide(self,pipes,floor):
          if self.birdo.move(0,0)[1] <= -10 or self.birdo.colliderect(pipes["lower1"]) or self.birdo.colliderect(pipes["upper1"]) or self.birdo.colliderect(floor):
-            #self.birdo.move_ip(0,-100) 
-            #print("GAME OVER")
             return True
