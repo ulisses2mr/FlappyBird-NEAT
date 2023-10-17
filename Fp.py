@@ -9,9 +9,9 @@ def evalution(genomes,config):
     
     
     points = 0
-    entities = []   # don't know
+    entities = []   # NEAT controled entitites
     gen = []        # stores fitness from generations
-    birdies = []    # birds class stores
+    birdies = []    # stores birds classes
 
     floor = pygame.Rect(0,580,800,20)
     screen = pygame.display.set_mode((500,600))
@@ -93,11 +93,6 @@ def evalution(genomes,config):
                 gen.pop(x)
                 birdies.pop(x)
 				
-			# if ge[x].fitness >= 10000:
-				# 	print("SCORE -> {}".format(balls[x].score))
-				# 	run = False
-				# 	break         
-            ######'''
         if len(birdies) == 0:
             run = False
             break
@@ -107,7 +102,7 @@ def evalution(genomes,config):
         n_alive = font.render("Alive:"+str(len(birdies)),True,"black")
         screen.blit(numbers,(240,10))
         screen.blit(n_alive,(40,10))
-        pygame.display.flip()       # mostra o que ocorre no ecrã
+        pygame.display.flip()       # refreshes screen
     print(points)
     
 
