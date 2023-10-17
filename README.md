@@ -1,2 +1,3 @@
 # FlappyBird-NEAT
-Flappy Bird with evolutionary algorithm
+Simple Flappy Bird project using the python NEAT library.
+
